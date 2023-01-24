@@ -1,0 +1,15 @@
+spring:
+  mail:
+    protocol: smtps
+    host: smtp.yandex.ru
+    port: 465
+    username: immagixe
+    password: chriglebaaxxxpnm
+
+rabbit:
+  queue: EMAIL_SENDING_TASKS
+  exchange: exchange
+  routing-key: TaskTrackerKey
+
+sender:
+  address: immagixe@yandex.ru
