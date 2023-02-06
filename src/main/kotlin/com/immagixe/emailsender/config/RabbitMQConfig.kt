@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class RabbitMQConfigKot(
+class RabbitMQConfig(
         @Value("\${rabbit.exchange}") private val topicExchangeName: String,
         @Value("\${rabbit.queue}") private val queueName: String,
         @Value("\${rabbit.routing-key}") private val routingKey: String
